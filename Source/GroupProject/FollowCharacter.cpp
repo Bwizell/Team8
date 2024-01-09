@@ -8,10 +8,7 @@ AFollowCharacter::AFollowCharacter()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	FollowCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
-	check(FollowCameraComponent != nullptr);
-	FollowCameraComponent->SetupAttachment(CastChecked<USceneComponent, UCapsuleComponent>(GetCapsuleComponent()));
-	FollowCameraComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 50.0f));
+	
 
 }
 
