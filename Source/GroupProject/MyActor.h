@@ -3,30 +3,24 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/CapsuleComponent.h"
-#include "Camera/CameraComponent.h"
 #include "GameFramework/Actor.h"
-#include "TestActor.generated.h"
+#include "MyActor.generated.h"
 
 UCLASS()
-class GROUPPROJECT_API ATestActor : public AActor
+class GROUPPROJECT_API AMyActor : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-
+	AMyActor();
 
 protected:
-	ATestActor();
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(VisibleAnywhere)
-		UCameraComponent* FollowCameraComponent;
 };

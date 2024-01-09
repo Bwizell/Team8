@@ -3,25 +3,23 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/CapsuleComponent.h"
-#include "Camera/CameraComponent.h"
 #include "GameFramework/Actor.h"
-#include "TestActor.generated.h"
+#include "Camera/CameraComponent.h"
+#include "Components/CapsuleComponent.h"
+#include "FollowCharacter.generated.h"
 
 UCLASS()
-class GROUPPROJECT_API ATestActor : public AActor
+class GROUPPROJECT_API AFollowCharacter : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-
+	AFollowCharacter();
 
 protected:
-	ATestActor();
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	
 
 public:	
 	// Called every frame
@@ -29,4 +27,5 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 		UCameraComponent* FollowCameraComponent;
+
 };
