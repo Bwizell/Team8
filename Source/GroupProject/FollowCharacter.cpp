@@ -6,10 +6,7 @@
 // Sets default values
 AFollowCharacter::AFollowCharacter()
 {
-<<<<<<< HEAD
-=======
 
->>>>>>> 15cbb57b676e1d17f9faad1558f4ad7c2920939b
 
 	PrimaryActorTick.bCanEverTick = true;
 
