@@ -10,10 +10,14 @@ AFollowCharacter::AFollowCharacter()
 
 =======
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 =======
 
 >>>>>>> 15cbb57b676e1d17f9faad1558f4ad7c2920939b
 >>>>>>> fcb1ca6f4212128e7eeebd7fb0795fd541786a83
+>>>>>>> bf00fd836dca842333fb4d5944c9a91174733a0a
 
 	PrimaryActorTick.bCanEverTick = true;
 
